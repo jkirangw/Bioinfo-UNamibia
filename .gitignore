@@ -1,0 +1,17 @@
+# Large data
+data/raw/
+*.fastq
+*.fq
+*.bam
+*.sam
+*.pod5
+*.fast5
+
+# Conda
+.env/
+.conda/
+
+# Temporary
+*.log
+*.tmp
+*~

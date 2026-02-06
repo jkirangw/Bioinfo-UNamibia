@@ -1,0 +1,14 @@
+conda env export > environment.yml
+conda env create -f environment.yml
+
+dorado
+samtools
+seqtk
+NanoPlot
+cutadapt (not installed)
+vsearch
+NanoFilt
+awk
+sort
+comm
+R (VennDiagram)

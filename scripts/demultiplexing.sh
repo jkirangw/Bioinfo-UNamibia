@@ -25,8 +25,8 @@ INPUT="subsample.fastq"
 TAGS="mids.txt"
 #Define primers explicitly
 
-PRIMER_F="GCATCGATGAAGAACGCAGC"
-PRIMER_R="TCCTCCGCTTATTGATATGC"
+PRIMER_F="GTGCCAGCMGCCGCGGTAA"
+PRIMER_R="GGACTACHVGGGTWTCTAAT"
 
 #Minimum read length
 MIN_LENGTH=200
@@ -66,8 +66,8 @@ while read TAG_NAME TAG_SEQ RTAG_SEQ; do
 
   echo "Processing ${TAG_NAME}..."
 
-  LOG="fun_hac_end_${TAG_NAME}.log"
-  OUTPUT="fun_hac_end_${TAG_NAME}.fastq"
+  LOG="bac_hac_end_${TAG_NAME}.log"
+  OUTPUT="bac_hac_end_${TAG_NAME}.fastq"
 
   cat "$INPUT" "$INPUT_REVCOMP" | \
   "$CUTADAPT" \
